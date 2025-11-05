@@ -1,3 +1,5 @@
+package Hotel;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,7 +8,7 @@ import java.util.Map;
 
 import static java.util.Collections.sort;
 
-public class BookingRepoRealisation implements BookingRepository {
+public class BookingRepositoryImpl implements BookingRepository {
     private final Map<Integer, Booking> bookings = new HashMap<>();
     @Override
     public Booking GetBookingById(int id) {

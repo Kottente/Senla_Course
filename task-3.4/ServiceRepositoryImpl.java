@@ -1,9 +1,11 @@
+package Hotel;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ServiceRepoRealisation implements ServiceRepository {
+public class ServiceRepositoryImpl implements ServiceRepository {
     private final Map<Integer, Service> services = new HashMap<>();
 
     @Override

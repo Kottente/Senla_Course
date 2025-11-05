@@ -1,10 +1,12 @@
+package Hotel;
+
 import java.time.LocalDateTime;
 
 public class App {
     public static void main(String[] args) {
-        BookingRepository bookingRepo = new BookingRepoRealisation();
-        RoomRepository roomRepo = new RoomRepoRealisation();
-        ServiceRepository serviceRepo = new ServiceRepoRealisation();
+        BookingRepository bookingRepo = new BookingRepositoryImpl();
+        RoomRepository roomRepo = new RoomRepositoryImpl();
+        ServiceRepository serviceRepo = new ServiceRepositoryImpl();
 
         HotelService admin = new HotelService(bookingRepo, roomRepo, serviceRepo);
 
